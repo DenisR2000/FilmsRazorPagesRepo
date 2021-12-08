@@ -1,0 +1,33 @@
+﻿@page "{id:int?}"
+@model Films.Pages.EditModel
+@{
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div class="d-flex flex-column align-items-center align-content-center justify-content-center m-3">
+    <form method="post">
+        <div class="input-group">
+            <label asp-for="Film.img_src" class="control-label"></label>
+            <input asp-for="Film.img_src" class="form-control" />
+        </div>
+        <div class="input-group">
+            <label asp-for="Film.Name" class="control-label"></label>
+            <input asp-for="Film.Name" class="form-control" />
+        </div>
+        <div class="input-group">
+            <label asp-for="Film.Genre" class="control-label"></label>
+            <input asp-for="Film.Genre" class="form-control" />
+        </div>
+        <div class="input-group">
+            <label asp-for="Film.Produser" class="control-label"></label>
+            <input asp-for="Film.Produser" class="form-control" />
+        </div>
+        <div class="input-group">
+            <label asp-for="Film.Description" class="control-label"></label>
+            <input asp-for="Film.Description" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Edit" class="btn btn-primary" />
+        </div>
+    </form>
+</div>

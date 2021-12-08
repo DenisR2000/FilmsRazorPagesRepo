@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .wraper {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main_container {
+            flex: 1 1 auto;
+        }
+
+        .card:hover {
+            background-color: rgba(0,0,0,0.2);
+            margin: 5px;
+            align-content: baseline;
+        }
+
+        .card {
+            margin: 5px;
+        }
+
+        header {
+            display: flex;
+            background-repeat: no-repeat;
+            background-color: #34437d;
+            flex-direction: column;
+            text-align: center;
+            height: 150px;
+            justify-content: center;
+            background-image: url("https://lh3.googleusercontent.com/proxy/Kn7RHVro1L2eV_SxuRN5HzODp_BCTZNMZ7DoGVrcSmupSNaI2jm4DyUq6DzHs75aju49IxTFUjGETiDzrttq2bfM5LJsXdyc8biT0FkKf4cA4g");
+        }
+
+        .card {
+            padding-inline
+        }
+
+        .btn {
+            background-color: #34437d;
+        }
+
+        footer {
+            margin: 0;
+            margin: 5px;
+            margin-top: 5px;
+            background: #34437d;
+            height: auto;
+        }
+
+        .ConteinerFooter {
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: row;
+        }
+
+        .Section1 {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            margin-left: 15%;
+            display: flex;
+            flex-flow: column;
+        }
+
+        .Section2 {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            margin-left: 25%;
+            display: flex;
+            flex-flow: column;
+        }
+
+        .Section1 span {
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: white;
+            font-size: 15px;
+            padding-bottom: 5px;
+        }
+
+        .Section2 span {
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: white;
+            font-size: 15px;
+            padding-bottom: 5px;
+        }
+
+        .ContentFinish {
+            margin-top: 5px;
+            padding-bottom: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .Section3Contacts {
+            margin-left: 15%;
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+        }
+
+        span hr {
+            background-color: red;
+            height: 1px;
+            color: red;
+            width: 80%;
+        }
+
+        span:hover {
+            color: yellow;
+            background: linear-gradient(90deg, green, red, pink);
+            transition: 0.5s ease-in-out;
+            list-style-type: upper-latin;
+        }
+
+        .fotter_Div {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        <div class="ConteinerFooter">
+            <div class="Section1">
+                <a href="index">Home</a>
+                <a href="Admin">Admin</a>
+                <span>Gallery</span>
+                <span>News</span>
+            </div>
+            <div class="Section2">
+                <span>Home</span>
+                <span>Aluuul</span>
+                <span>Gallery</span>
+                <span>News</span>
+            </div>
+            <div class="Section3Contacts">
+                <img class="imgInst">
+            </div>
+            <img class="imgFb">
+        </div>
+        <img class="imgYoutube"></div>
+        </div>
+        </div>
+        <span><hr></span>
+    </footer>
+</body>
+</html>

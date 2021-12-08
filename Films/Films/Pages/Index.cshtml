@@ -1,0 +1,33 @@
+﻿@page 
+@model Films.Pages.IndexModel
+@{
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+<div class="d-flex flex-column flex-wrap justify-content-center align-items-center align-content-center">
+    <form class="w-90">
+        <select class="form-select" asp-for="FilmGenre" asp-items="Model.Genres">
+            <option value="">All</option>
+        </select>
+        <div class="input-group">
+            <span class="input-group-text">Title</span>
+            <input placeholder="Film title" class="form-control" asp-for="SearchString" aria-label="With textarea" />
+            <input type="submit" value="Find" class="btn btn-primary bt-lg" />
+        </div>
+    </form>
+    <div class="d-flex flex-row flex-wrap justify-content-center align-items-center align-content-center">
+        @foreach (var film in Model.Films)
+        {
+            <div class="card" style="width: 18rem;">
+                <img src="@film.img_src" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@film.Name</h5>
+                    <p class="card-text">@film.Description</p>
+                    <a href="/todayfilms/@film.FilmDataId" class="btn btn-primary">Description</a>
+                </div>
+            </div>
+        }
+    </div>
+
+</div>
